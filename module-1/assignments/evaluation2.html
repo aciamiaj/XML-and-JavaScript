@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="evaluation2.css">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <form name="signupform">
+        <fieldset>
+        <label for="email" required>Your Email*: </label>
+        <input type="text" size="15" name="acctinfo" id="email" ></br>
+        <label for="dateOfVisit" value="mm/dd/yyyy">Date of Visit: </label>
+        <input type="date" name="dateOfVisit" id="dateOfVisit"></br>
+        <br>
+        Your Comment:
+        <br>
+       <textarea name="comments" id="comments">
+       </textarea>
+       <p><input type="submit" id="submit" value="Submit" onclick="displayMessage()"></p>
+       <label id="display"></label>
+    </fieldset>
+
+    <script>
+        function displayMessage() {
+            let display = document.querySelector('#comments').textContent
+            document.querySelector('#display').innerHTML(display);
+        }
+    </script>
+</form>
+  </body>
+</html>

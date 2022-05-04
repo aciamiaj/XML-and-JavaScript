@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<activity>
+  <person>
+    <name>
+    <firstName>Jaimaica Daisy</firstName> 
+    <lastName>Eugenio</lastName>
+    </name>
+    <gender>Female</gender>
+    <country>Philippines</country>
+    <hobbies>Watching Movies</hobbies>
+  </person>
+</activity>
