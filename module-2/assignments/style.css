@@ -1,0 +1,18 @@
+menuInfo {
+    display: block;
+    margin: 1em 0;
+}
+
+itemName > originalName {
+    font-size: medium;
+}
+
+category {
+    white-space: pre-line;
+}
+
+menuInfo menu {
+    display: block;
+    font-weight: bold;
+    font-size: 150%;
+}
