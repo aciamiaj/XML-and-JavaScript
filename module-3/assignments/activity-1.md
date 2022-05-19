@@ -1,28 +1,28 @@
 # Activity 1
 
 ```xml
-<list:employeeList xmlns:list="urn:corp:list" xmlns:personList="urn:corp:list" xmlns:empID="urn:corp:emp" xmlns:name="urn:corp:dep" xmlns:name="urn:corp:emp">
-  <list:personList>
-    <emp:empID>E0000001</emp:empID>
-    <dep:name>Sales</dep:name>
-    <emp:name>John Smith</emp:name>
-  </list:personList>
-  <list:personList>
+<employeeList xmlns="urn:corp:list" xmlns:personList="urn:corp:list" xmlns:empID="urn:corp:emp" xmlns:name="urn:corp:dep" xmlns:name="urn:corp:emp">
+  <list: personList>
+    <emp : empID>E0000001</emp : empID>
+    <dep : name>Sales</dep : name>
+    <emp : name>John Smith</emp : name>
+  </list personList>
+  <list personList>
     <emp:empID>E0000002</emp:empID>
-    <dep:name>Development</dep:name>
-    <emp:name>Ichiro Tanaka</emp:name>
-  </list:personList>
-  <list:personList>
-    <emp:empID>E0000003</emp:empID>
-    <dep:name>Development</dep:name>
-    <emp:name>Jiro Suzuki</emp:name>
-  </list:personList>
-  <list:personList>
-    <emp:empID>E0000004</emp:empID>
-    <dep:name>Administrative</dep:name>
-    <emp:name>Saburo Takahashi</emp:name>
-  </list:personList>
-</list:employeeList>
+    <name>Development</name>
+    <name>Ichiro Tanaka</name>
+  </personList>
+  <personList>
+    <empID>E0000003</empID>
+    <name>Development</name>
+    <name>Jiro Suzuki</name>
+  </personList>
+  <personList>
+    <empID>E0000004</empID>
+    <name>Administrative</name>
+    <name>Saburo Takahashi</name>
+  </personList>
+</employeeList>
 ```
 
 Resolve naming collision by adding namepsaces
