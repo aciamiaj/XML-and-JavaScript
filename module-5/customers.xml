@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="./customers.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <customers>
   <customer custID="cust201">
     <name title="Mr.">John Michael</name>
