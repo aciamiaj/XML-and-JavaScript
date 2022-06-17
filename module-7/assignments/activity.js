@@ -84,19 +84,19 @@ const data =
 
   const parsed = data.map((data) => ({
 	id: data.id,
-    firstName: data.first_name,
+  firstName: data.first_name,
 	lastName: data.last_name,
 	gender: data.gender,
 	ipAddress: data.ip_address,
 	}));
 	console.log(`Parsed Data --> change snake case to camel case`);
-    console.log(parsed);
-    console.log(`===============================================`);
+  console.log(parsed);
+  console.log(`===============================================`);
 
-    const filtered = parsed.filter((parsed) => parsed.id > 5); 
-    console.log(`Filtered data --> id > 5`);
-    console.log(filtered);
-    console.log(`===============================================`);
+  const filtered = parsed.filter((parsed) => parsed.id > 5); 
+  console.log(`Filtered data --> id > 5`);
+  console.log(filtered);
+  console.log(`===============================================`);
 
 
 	
