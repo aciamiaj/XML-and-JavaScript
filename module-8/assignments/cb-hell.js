@@ -25,8 +25,9 @@ return { val: value, res: await conversion(value)
 };
 }))
 
-const logResult = (meters, feet) => 
-console.log('Converted ${meters}m to ${feet}ft')
+const logResult = (meters, feet) => {
+console.log(`Converted ${meters}m to ${feet}ft`);
+}
  
 const main = async () => {
     console.log("Start");
