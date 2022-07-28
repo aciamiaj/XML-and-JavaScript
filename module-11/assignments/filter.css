@@ -1,0 +1,20 @@
+body  {
+  text-align:  center;
+  font-size:  15px;
+  padding:  35vh  10px  40vh  10px;
+  background-color:  #cbe9ee;
+}
+
+.genre-card {
+  text-align: center;
+  text-decoration:  none;
+  color:  #060b0c;
+  margin: 10px;
+  overflow: hidden; 
+} 
+
+ol {
+  list-style: none;
+  text-align: center;
+} 
+
