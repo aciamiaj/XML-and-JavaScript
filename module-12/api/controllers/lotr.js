@@ -36,8 +36,8 @@ const getAllChapters = async () => {
      const { data } = await axios.get(`${endpoint}/chapter`,{
       headers: { Authorization: "Bearer " + token},
      });
-     let result = data.docs.map((item) = {
-      return {"_id": item._id, "name": item.book, "chapters": item.chapterName};
+     let result = data.docs.map((item) => {
+      return { "_id": item._id, "name": item.book, "chapters": item.chapterName };
      });
      result = JSON.stringify(result);
 
