@@ -32,14 +32,14 @@ const getAllMovies = async () => {
 };
 
 const getAllChapters = async () => {
-  try{
-     const { data } = await axios.get(`${endpoint}/chapter`,{
-      headers: { Authorization: "Bearer " + token},
-     });
-     let result = data.docs.map((item) => {
-      return { "_id": item._id, "name": item.book, "chapters": item.chapterName };
-     });
-     result = JSON.stringify(result);
+  try {
+    const { data } = await axios.get(`${endpoint}/chapter`, {
+      headers: { Authorization: "Bearer " + token },
+    });
+    let result = data.docs.map((item) => {
+      return {"_id": item._id, "name": item.book, "chapters": item.chapterName};
+    });
+    result = JSON.stringify(result);
 
     return { code: 200, data: result};
   } catch (error) {
@@ -54,5 +54,5 @@ const getAllChapters = async () => {
 module.exports = {
   getAllBooks,
   getAllMovies,
-  getAllChapters
+  getAllChapters,
 };
